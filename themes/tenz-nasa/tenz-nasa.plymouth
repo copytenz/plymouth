@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=tenz-nasa
+Description=Tenz-nasa Ubuntu plymounth theme
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/tenz-nasa
+ScriptFile=/usr/share/plymouth/themes/tenz-nasa/tenz-nasa.script
