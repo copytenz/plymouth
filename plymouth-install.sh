@@ -6,6 +6,7 @@
 # DESCRIPTION:	Installs plymouth theme from the current folder
 #		NOTE, the script:
 # 		* assumes that the system is using alternatives
+# 		* assumes that ".plymouth" file is named as theme folder 
 #
 # USAGE: 	plymouth-install.sh [themeFolder]
 # 		if themeFolder is not set, the scripts asks for it and checks that
@@ -54,9 +55,9 @@ while true; do
 done
 
  if [ ! $(pwd) == "/usr/share/plymouth/themes" ]; then	
-	cp -r  "./$themeName" "/usr/sharee/plymouth/themes/"
-	chgrp users /usr/share/pymouth/themes
-	chmod u+rwX,g+rwX /usr/share/plymouth/themes
+	cp -r  "./$themeName" "/usr/share/plymouth/themes/"
+	chgrp users "/usr/share/plymouth/themes/$themeName"
+	chmod u+rwX,g+rwX "/usr/share/plymouth/themes/$themeName"
 	cd /usr/share/plymouth/themes
  fi
 

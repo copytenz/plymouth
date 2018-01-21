@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=tenz-mint
+Description=tenz-mint Ubuntu plymounth theme
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/tenz-mint
+ScriptFile=/usr/share/plymouth/themes/tenz-mint/tenz-mint.script
